@@ -2,7 +2,7 @@ package sec03.exam05_deep_clone;
 
 import java.util.*;
 
-public class Member {
+public class Member implements Cloneable {
 	public String name;
 	public int age;
 	public int[] scores;
