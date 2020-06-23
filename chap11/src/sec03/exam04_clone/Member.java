@@ -1,4 +1,4 @@
-package sec03.exam03_tostring;
+package sec03.exam04_clone;
 
 public class Member implements Cloneable{ // 복제할 수 있다는 표시
 	public String id;
