@@ -2,8 +2,6 @@ package sec04.exam01_objects;
 
 import java.util.*;
 
-import sec04.exam01_objects.CompareExample.*;
-
 public class HashCodeExample {
 
 	public static void main(String[] args) {
