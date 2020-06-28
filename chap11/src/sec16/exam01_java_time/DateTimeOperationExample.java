@@ -14,6 +14,12 @@ public class DateTimeOperationExample {
 			.plusHours(4)
 			.minusMinutes(5)
 			.plusSeconds(6);
+		// 단순하게 한다면
+		/*
+		 * LocalDateTime targetDateTime = now.plusYears(1); targetDateTime =
+		 * targetDateTime.plusMonths(2); 이런식으로 쭉쭉쭉 이어 쓸 수도 있지만 너무 길다. 그래서 위처럼 도트 연산자로
+		 * 연결해서 순차적으로 호출한다.
+		 */
 		System.out.println("연산후: " + targetDateTime);
 	}
 }
