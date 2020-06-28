@@ -8,7 +8,8 @@ public class DateTimeParsingExample {
 	public static void main(String[] args) {
 		DateTimeFormatter formatter;
 		LocalDate localDate;
-		
+		//LocalDate의 parse(CharSequence)메소드는 기본적으로 ISO_LOCAL_DATE 포맷터를 사용해서 문자열을 파싱한다. 
+		// ISO_LOCAL_DATE는 DateTimeFormatter의 상수로 정의되어 있다. 
 		localDate = LocalDate.parse("2024-05-21");
 		System.out.println(localDate);
 		
