@@ -6,7 +6,7 @@ public class DateTimeOperationExample {
 	public static void main(String[] args) {
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println("현재시: " + now);
-		
+		//메소드의 매개변수 만큼 더하거나 뺀다
 		LocalDateTime  targetDateTime = now
 			.plusYears(1)
 			.minusMonths(2)
