@@ -7,14 +7,15 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
-
-public class DateTimeCreateExample {
+import java.util.*;
+//임포트 해줘야 한다.
+public class DateTimeCreateExample {			//Instant 쪽에 Thread때문에 예외처리
 	public static void main(String[] args) throws InterruptedException {
 		//날짜 얻기
-		LocalDate currDate = LocalDate.now();
+		LocalDate currDate = LocalDate.now(); //현재 로컬 날짜 정보 가진 클래스를 currDate에 
 		System.out.println("현재 날짜: " + currDate);
 
-		LocalDate targetDate = LocalDate.of(2024, 5, 10);
+		LocalDate targetDate = LocalDate.of(2024, 5, 10);  //of()는 직접 지정한 날짜 데이터
 		System.out.println("목표 날짜: " + targetDate + "\n");
 
 		//시간 얻기
@@ -37,6 +38,11 @@ public class DateTimeCreateExample {
 		ZonedDateTime newyorkDateTime = 
        ZonedDateTime.now(ZoneId.of("America/New_York"));
 		System.out.println("뉴욕 시간존: " + newyorkDateTime + "\n");
+		
+		/*
+		 * String[] availableIDs = TimeZone.getAvailableIDs(); for(String zoneId :
+		 * availableIDs) { System.out.println(zoneId); }
+		 */ // 이것을 사용하면 ZoneID로 사용할 수 있는 존아이디들의 목록을 볼 수 있다.
 		
 		//특정 시점의 타임스탬프 얻기
 		Instant instant1 = Instant.now();
