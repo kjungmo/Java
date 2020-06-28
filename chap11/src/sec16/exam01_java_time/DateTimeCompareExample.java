@@ -43,6 +43,10 @@ public class DateTimeCompareExample {
 		System.out.println("남은 분: " + remainMinute);
 		System.out.println("남은 초: " + remainSecond + "\n");
 		//--------------------------------------------------------------
+		// Period와 Duration은 날짜와 시간의 양을 나타내는 클래스들이다. 
+		//Period는 년,달,일의 양을 나타내는 클래스
+		//Duration은 시, 분, 초, 나노초의 양을 나타내는 클래스
+		//이 클래스들은 D-day나 D-time을 구할 때 사용할 수 있다. 
 		System.out.println("[종료까지 남은 기간]");
 		Period period = Period.between(startDateTime.toLocalDate(), endDateTime.toLocalDate());
 		System.out.print("남은 기간: " + period.getYears() + "년 ");
