@@ -56,5 +56,5 @@ public class DateTimeCreateExample {			//Instant 쪽에 Thread때문에 예외처리
 			System.out.println("동일한 시간입니다.");
 		}
 		System.out.println("차이(nanos): " + instant1.until(instant2, ChronoUnit.NANOS));
-	}
+	} // NANO로 해야 차이나는 시간을 알 수 있다. 너무 처리시간이 빠르기 때문
 }
