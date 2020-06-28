@@ -2,7 +2,7 @@ package sec15.exam01_format;
 
 import java.text.DecimalFormat;
 
-public class DecimalFormatExample {
+public class DecimalFormatExample { //DecimalFormat은 숫자 데이터를 원하는 형식으로 표현하기 위해 패턴을 사용함
 	public static void main(String[] args) {
 		double num = 1234567.89;
 				
