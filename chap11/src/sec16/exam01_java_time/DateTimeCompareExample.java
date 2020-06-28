@@ -21,7 +21,7 @@ public class DateTimeCompareExample {
 			System.out.println("종료했습니다." + "\n");
 		}
 		//--------------------------------------------------------------
-		System.out.println("[종료까지 남은 시간]");
+		System.out.println("[종료까지 남은 시간]"); //StartDateTime의 인스턴스 메소드인 until() 사용해서 차이 얻을 수도 있고,
 		long remainYear = startDateTime.until(endDateTime, ChronoUnit.YEARS);
 		long remainMonth = startDateTime.until(endDateTime, ChronoUnit.MONTHS);
 		long remainDay = startDateTime.until(endDateTime, ChronoUnit.DAYS);
@@ -29,7 +29,7 @@ public class DateTimeCompareExample {
 		long remainMinute = startDateTime.until(endDateTime, ChronoUnit.MINUTES);
 		long remainSecond = startDateTime.until(endDateTime, ChronoUnit.SECONDS);
 		
-
+					//ChronoUnit의 YEARS등 상수의 between()사용해서 차이 얻을 수 있다.
 		remainYear = ChronoUnit.YEARS.between(startDateTime, endDateTime);
 		remainMonth = ChronoUnit.MONTHS.between(startDateTime, endDateTime);
 		remainDay = ChronoUnit.DAYS.between(startDateTime, endDateTime);
