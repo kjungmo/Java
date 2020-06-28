@@ -9,8 +9,11 @@ public class DateTimeChangeExample {
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println("현재: " + now);
 		
-		LocalDateTime  targetDateTime = null;
+		LocalDateTime  targetDateTime = null; // 년도 상대변경, 월 상대변경, 요일 상대변경에서 계속 사용할거라 이렇게 선언해둠
+		// 메소드의 매개변수의 값으로 변경하란 것.
 		
+		// with()는 상대변경, 즉 현재 날짜를 기준으로 상대적인 날짜를 리턴
+		//TemporalAdjuster
 		//직접 변경
 		targetDateTime = now
 			.withYear(2024)
