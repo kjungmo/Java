@@ -7,7 +7,7 @@ public class Calculator {
 		return memory;
 	}
 
-	public synchronized void setMemory(int memory) {
+	public synchronized void setMemory(int memory) { //동기화 메소드로 만들었기 때문에 User1 스레드가 setMemory()를 실행할 동안 User2 스레드가 setMemory()메소드를 실행할 수 없음
 		this.memory = memory;
 		try {
 			Thread.sleep(2000);
