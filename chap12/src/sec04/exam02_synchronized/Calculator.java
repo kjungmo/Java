@@ -15,4 +15,10 @@ public class Calculator {
 		System.out.println(Thread.currentThread().getName() + ": " +  this.memory);
 	}
 }
+/*
+ * public void setMemory(int memory) { synchronized(this) { this.memory =
+ * memory; try { Thread.sleep(2000); } catch (InterruptedException e) {}
+ * System.out.println(Thread.currentThread().getName() + ": " + this.memory +
+ * " 저장"); } }
+ */ // 이런식으로 동기화 블록으로도 만들 수 있다.
 
