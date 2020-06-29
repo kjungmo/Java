@@ -7,6 +7,7 @@ public class BeepPrintExample1 {
 		Toolkit toolkit = Toolkit.getDefaultToolkit();	
 		for(int i=0; i<5; i++) {	//포문이 반복되고 0.5sec sleep 간격으로 beep
 			toolkit.beep();
+			System.out.println("sound");
 			try { Thread.sleep(500); } catch(Exception e) {}
 		}
 
