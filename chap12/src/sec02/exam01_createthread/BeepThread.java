@@ -10,7 +10,7 @@ public class BeepThread extends Thread { // 작업 스레드가 실행할 작업을 Runnable
 		for(int i=0; i<5; i++) {		
 			toolkit.beep();
 			try { Thread.sleep(500); } catch(Exception e) {}
-		}
+		} //여기까지가 스레드 실행 내용이다
 	}
 }
 
