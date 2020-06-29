@@ -9,6 +9,6 @@ public class User2 extends Thread {
 	}
 	
 	public void run() {
-		calculator.setMemory(50);
+		calculator.setMemory(50); //User1과 다르게 공유객체인 Calculator의 메모리에 50을 저장
 	}
 }
