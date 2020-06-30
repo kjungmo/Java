@@ -11,7 +11,7 @@ public class SumThread extends Thread {
 		this.sum = sum;
 	}
 	
-	@Override
+	@Override //재정의 해줘야함
 	public void run() {
 		for(int i=1; i<=100; i++) {
 			sum+=i;
