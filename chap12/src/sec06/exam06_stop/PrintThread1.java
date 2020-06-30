@@ -8,7 +8,7 @@ public class PrintThread1 extends Thread {
 	}
 	
 	public void run() {	
-		while(!stop) {
+		while(!stop) { //stop이 true가 되면 while문을 빠져나온다
 			System.out.println("실행 중");
 		}	
 		System.out.println("자원 정리");
