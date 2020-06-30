@@ -10,6 +10,6 @@ public class InterruptExample {
 		} catch (InterruptedException e) {
 		}
 		
-		thread.interrupt();
+		thread.interrupt(); //스레드를 종료시키기 위해 InterruptedException을 발생시킴
 	}
 }
